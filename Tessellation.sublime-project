@@ -1,0 +1,65 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"make",
+				"-j"
+			],
+			"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+			"name": "Android",
+			"selector": "source.makefile",
+			"variants":
+			[
+				{
+					"cmd":
+					[
+						"make",
+						"clean"
+					],
+					"name": "Clean"
+				},
+				{
+					"cmd":
+					[
+						"make",
+						"run",
+						"-j"
+					],
+					"name": "Run"
+				},
+				{
+					"cmd":
+					[
+						"make",
+						"kill"
+					],
+					"name": "Kill"
+				}
+			],
+			"working_dir": "${project_path}/TessellationAndroid"
+		}
+	],
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.d",
+				"*.o",
+				"*.a",
+				"*.sublime-workspace"
+			],
+			"folder_exclude_patterns":
+			[
+				"bin",
+				"obj",
+				"libs",
+				"gen"
+			],
+			"follow_symlinks": true,
+			"path": "."
+		}
+	]
+}

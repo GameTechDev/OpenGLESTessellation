@@ -1,0 +1,11 @@
+[material]
+Texture0 = gravel.dds
+Texture1 = terrain_01_02_NMHM_8_2k.dds
+Texture1sRGB = FALSE
+Texture2 = terrain_01_02_AO_8_2k.dds
+RenderStateFile     = %Default.rs
+
+VertexShaderFileOGL_1 = lambert.glsl
+FragmentShaderFileOGL_1 = lambert.glsl
+ControlShaderFileOGL_1 = lambert.glsl
+EvaluationShaderFileOGL_1 = lambert.glsl

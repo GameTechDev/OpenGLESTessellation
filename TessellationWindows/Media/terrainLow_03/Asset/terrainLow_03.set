@@ -1,0 +1,18 @@
+// Created with FBXConvert.exe: Fri Feb 21 13:26:26 2014
+[node 0]
+type = model
+name = pPlane1
+parent = -1
+matrixRow0 = 1 0 -0 0
+matrixRow1 = -0 1 -0 0
+matrixRow2 = 0 0 1 0
+matrixRow3 = 0 0 -0 1
+scale = 1 1 1
+rotation = -0 0 0
+position = 0 0 -0
+BoundingBoxCenter = 0 0 -0 
+BoundingBoxHalf = 75000 1.665334536937735e-011 75000 
+meshcount = 1
+material0 = terrain
+//Duration: ( 238230200 ns)
+// FBXConvert.exe Finished: Fri Feb 21 13:26:26 2014

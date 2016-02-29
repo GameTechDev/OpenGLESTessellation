@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Workspace Name="CPUT" Database="./CPUT.tags">
+  <Project Name="CPUT" Path="CPUT.project" Active="Yes" />
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Project Name="CPUT" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="CPUT" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="gcc" Selected="yes">
+      <Project Name="CPUT" ConfigName="gcc"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="msvcc" Selected="yes">
+      <Project Name="CPUT" ConfigName="msvcc"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

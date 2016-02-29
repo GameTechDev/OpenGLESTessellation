@@ -1,0 +1,3 @@
+MultiMaterial = true
+Material0 = lambert1
+Material1 = wireframe

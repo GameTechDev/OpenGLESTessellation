@@ -1,0 +1,12 @@
+[material]
+Texture0 = gravel.ktx
+Texture1 = terrain_01_02_NMHM_8_2k.ktx
+Texture2 = terrain_01_02_AO_8_2k.ktx
+Texture1sRGB = FALSE
+RenderStateFile     = %Default.rs
+
+VertexShaderFileOGL_1 = lambert.glsl
+ControlShaderFileOGL_1 = lambert.glsl
+EvaluationShaderFileOGL_1 = lambert.glsl
+GeometryShaderFileOGL_1 = wireframe.glsl
+FragmentShaderFileOGL_1 = wireframe.glsl

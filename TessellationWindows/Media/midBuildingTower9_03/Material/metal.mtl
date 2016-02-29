@@ -1,0 +1,16 @@
+[material]
+Texture0 = midBuildingTower9_01_DM_4k.dds
+Texture1 = midBuildingTower9_01_NM_2k.dds
+Texture2 = midBuildingTower9_01_DM_4k.dds
+Texture3 = midBuildingTower9_01_ST_1k.dds
+Texture1sRGB = FALSE
+VertexShaderFile    = %DefaultShader.fx
+VertexShaderMain    = VSMain
+VertexShaderProfile = vs_4_0
+PixelShaderFile     = %DefaultShader.fx
+PixelShaderMain     = PSMain
+PixelShaderProfile  = ps_4_0
+RenderStateFile     = metal.rs
+
+VertexShaderFileOGL_1 = metal.glsl
+FragmentShaderFileOGL_1 = metal.glsl

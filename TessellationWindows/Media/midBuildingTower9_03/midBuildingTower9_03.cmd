@@ -1,0 +1,1 @@
+FBXConvert.exe -input:midBuildingTower9_03.fbx -outputdir:../CPUT-DEV/ 

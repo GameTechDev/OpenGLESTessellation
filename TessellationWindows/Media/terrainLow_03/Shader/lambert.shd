@@ -1,0 +1,5 @@
+diffuseTmp = texture( name="Texture0", uv=uv0 * 20)
+normal = texture( name="Texture1", uv=uv0 * 1)
+aoMap = texture( name="Texture2", uv=uv0 * 1)
+diffuse = diffuseTmp * aoMap
+ambient = diffuse

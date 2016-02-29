@@ -1,0 +1,794 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug-DX|Win32">
+      <Configuration>Debug-DX</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-GLES|Win32">
+      <Configuration>Debug-GLES</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-GL|Win32">
+      <Configuration>Debug-GL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-DX|Win32">
+      <Configuration>Release-DX</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-GLES|Win32">
+      <Configuration>Release-GLES</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-GL|Win32">
+      <Configuration>Release-GL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\DirectXTex\DDSTextureLoader\DDSTextureLoader.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTAnimation.cpp" />
+    <ClCompile Include="CPUT\CPUTAssetLibrary.cpp" />
+    <ClCompile Include="CPUT\CPUTAssetLibraryDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTAssetLibraryOGL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTAssetSet.cpp" />
+    <ClCompile Include="CPUT\CPUTAssetSetDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTAssetSetOGL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTBufferDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTBufferOGL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTButton.cpp" />
+    <ClCompile Include="CPUT\CPUTCamera.cpp" />
+    <ClCompile Include="CPUT\CPUTCheckbox.cpp" />
+    <ClCompile Include="CPUT\CPUTComputeShaderDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTConfigBlock.cpp" />
+    <ClCompile Include="CPUT\CPUTControl.cpp" />
+    <ClCompile Include="CPUT\CPUTDomainShaderDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTDropdown.cpp" />
+    <ClCompile Include="CPUT\CPUTFont.cpp" />
+    <ClCompile Include="CPUT\CPUTFontDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTFontOGL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTFrustum.cpp" />
+    <ClCompile Include="CPUT\CPUTGeometryShaderDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTGuiController.cpp" />
+    <ClCompile Include="CPUT\CPUTGuiControllerDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTGuiControllerOGL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTHullShaderDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTInputLayoutCacheDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTITTTaskMarker.cpp" />
+    <ClCompile Include="CPUT\CPUTLight.cpp" />
+    <ClCompile Include="CPUT\CPUTMaterial.cpp" />
+    <ClCompile Include="CPUT\CPUTMaterialDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTMaterialOGL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTMesh.cpp" />
+    <ClCompile Include="CPUT\CPUTMeshDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTMeshOGL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTModel.cpp" />
+    <ClCompile Include="CPUT\CPUTModelDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTModelOGL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTNullNode.cpp" />
+    <ClCompile Include="CPUT\CPUTOSServicesWin.cpp" />
+    <ClCompile Include="CPUT\CPUTPerfTaskMarker.cpp" />
+    <ClCompile Include="CPUT\CPUTPixelShaderDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTRenderNode.cpp" />
+    <ClCompile Include="CPUT\CPUTRenderStateBlock.cpp" />
+    <ClCompile Include="CPUT\CPUTRenderStateBlockDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTRenderStateBlockOGL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTRenderTarget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTRenderTargetOGL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTScene.cpp" />
+    <ClCompile Include="CPUT\CPUTShaderDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTShaderOGL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTSkeleton.cpp" />
+    <ClCompile Include="CPUT\CPUTSlider.cpp" />
+    <ClCompile Include="CPUT\CPUTSprite.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTSpriteOGL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTText.cpp" />
+    <ClCompile Include="CPUT\CPUTTexture.cpp" />
+    <ClCompile Include="CPUT\CPUTTextureDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTTextureOGL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTTimerWin.cpp" />
+    <ClCompile Include="CPUT\CPUTVertexShaderDX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTWindowAndroid.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTWindowWin.cpp" />
+    <ClCompile Include="CPUT\CPUT_DX11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUT_OGL.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="middleware\libktx\checkheader.c" />
+    <ClCompile Include="middleware\libktx\hashtable.c" />
+    <ClCompile Include="middleware\libktx\loader.c" />
+    <ClCompile Include="middleware\libktx\swap.c" />
+    <ClCompile Include="middleware\libktx\writer.c" />
+    <ClCompile Include="middleware\stb\stb_image.c">
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">false</ExceptionHandling>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExceptionHandling>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExceptionHandling>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">false</ExceptionHandling>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\DirectXTex\DDSTextureLoader\DDSTextureLoader.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUT.h" />
+    <ClInclude Include="CPUT\CPUTAnimation.h" />
+    <ClInclude Include="CPUT\CPUTAssetLibrary.h" />
+    <ClInclude Include="CPUT\CPUTAssetLibraryDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTAssetLibraryOGL.h" />
+    <ClInclude Include="CPUT\CPUTAssetSet.h" />
+    <ClInclude Include="CPUT\CPUTAssetSetDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTAssetSetOGL.h" />
+    <ClInclude Include="CPUT\CPUTBuffer.h" />
+    <ClInclude Include="CPUT\CPUTBufferDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTBufferOGL.h" />
+    <ClInclude Include="CPUT\CPUTButton.h" />
+    <ClInclude Include="CPUT\CPUTCallbackHandler.h" />
+    <ClInclude Include="CPUT\CPUTCamera.h" />
+    <ClInclude Include="CPUT\CPUTCheckbox.h" />
+    <ClInclude Include="CPUT\CPUTComputeShaderDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTConfigBlock.h" />
+    <ClInclude Include="CPUT\CPUTControl.h" />
+    <ClInclude Include="CPUT\CPUTDomainShaderDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTDropdown.h" />
+    <ClInclude Include="CPUT\CPUTEventHandler.h" />
+    <ClInclude Include="CPUT\CPUTFont.h" />
+    <ClInclude Include="CPUT\CPUTFontDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTFontOGL.h" />
+    <ClInclude Include="CPUT\CPUTFrustum.h" />
+    <ClInclude Include="CPUT\CPUTGeometryShaderDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTGuiController.h" />
+    <ClInclude Include="CPUT\CPUTGuiControllerDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTGuiControllerOGL.h" />
+    <ClInclude Include="CPUT\CPUTHullShaderDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTInputLayoutCache.h" />
+    <ClInclude Include="CPUT\CPUTInputLayoutCacheDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTITTTaskMarker.h" />
+    <ClInclude Include="CPUT\CPUTLight.h" />
+    <ClInclude Include="CPUT\CPUTMaterial.h" />
+    <ClInclude Include="CPUT\CPUTMaterialDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTMaterialOGL.h" />
+    <ClInclude Include="CPUT\CPUTMath.h" />
+    <ClInclude Include="CPUT\CPUTMesh.h" />
+    <ClInclude Include="CPUT\CPUTMeshDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTMeshOGL.h" />
+    <ClInclude Include="CPUT\CPUTModel.h" />
+    <ClInclude Include="CPUT\CPUTModelDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTModelOGL.h" />
+    <ClInclude Include="CPUT\CPUTNullNode.h" />
+    <ClInclude Include="CPUT\CPUTOGLES3Compat.h" />
+    <ClInclude Include="CPUT\CPUTOSServices.h" />
+    <ClInclude Include="CPUT\CPUTPerfTaskMarker.h" />
+    <ClInclude Include="CPUT\CPUTPixelShaderDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTRefCount.h" />
+    <ClInclude Include="CPUT\CPUTRenderNode.h" />
+    <ClInclude Include="CPUT\CPUTRenderParams.h" />
+    <ClInclude Include="CPUT\CPUTRenderStateBlock.h" />
+    <ClInclude Include="CPUT\CPUTRenderStateBlockDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTRenderStateBlockOGL.h" />
+    <ClInclude Include="CPUT\CPUTRenderStateMapsDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTRenderStateMapsOGL.h" />
+    <ClInclude Include="CPUT\CPUTRenderTarget.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTRenderTargetOGL.h" />
+    <ClInclude Include="CPUT\CPUTScene.h" />
+    <ClInclude Include="CPUT\CPUTShaderDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTShaderOGL.h" />
+    <ClInclude Include="CPUT\CPUTSkeleton.h" />
+    <ClInclude Include="CPUT\CPUTSlider.h" />
+    <ClInclude Include="CPUT\CPUTSprite.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTSpriteOGL.h" />
+    <ClInclude Include="CPUT\CPUTText.h" />
+    <ClInclude Include="CPUT\CPUTTexture.h" />
+    <ClInclude Include="CPUT\CPUTTextureDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTTextureOGL.h" />
+    <ClInclude Include="CPUT\CPUTTimer.h" />
+    <ClInclude Include="CPUT\CPUTTimerWin.h" />
+    <ClInclude Include="CPUT\CPUTVertexShaderDX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTWindow.h" />
+    <ClInclude Include="CPUT\CPUTWindowAndroid.h" />
+    <ClInclude Include="CPUT\CPUTWindowWin.h" />
+    <ClInclude Include="CPUT\CPUT_DX11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUT_OGL.h" />
+    <ClInclude Include="middleware\stb\stb_image.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B5BC905D-8C9B-433C-A107-2A2B3474D6C7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CPUTOGL_2012</RootNamespace>
+    <ProjectName>CPUT_2012</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(PlatformToolset)\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_D32GL</TargetName>
+    <ExecutablePath>$(ProgramFiles)\Windows Kits\8.0\bin\x86;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH)</ExecutablePath>
+    <IncludePath>$(IncludePath);</IncludePath>
+    <LibraryPath>$(LibraryPath);</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(PlatformToolset)\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_D32DX</TargetName>
+    <ExecutablePath>$(ProgramFiles)\Windows Kits\8.0\bin\x86;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH)</ExecutablePath>
+    <IncludePath>$(IncludePath);</IncludePath>
+    <LibraryPath>$(LibraryPath);</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(PlatformToolset)\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_R32DX</TargetName>
+    <ExecutablePath>$(ProgramFiles)\Windows Kits\8.0\bin\x86;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH)</ExecutablePath>
+    <IncludePath>$(IncludePath);</IncludePath>
+    <LibraryPath>$(LibraryPath);</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(PlatformToolset)\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_D32GLES</TargetName>
+    <ExecutablePath>$(ProgramFiles)\Windows Kits\8.0\bin\x86;$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH)</ExecutablePath>
+    <IncludePath>$(IncludePath);</IncludePath>
+    <LibraryPath>$(LibraryPath);</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(PlatformToolset)\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_R32GL</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">
+    <OutDir>$(ProjectDir)lib\$(Platform)\$(PlatformToolset)\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Platform)\$(PlatformToolset)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_R32GLES</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GL|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>KTX_OPENGL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=_WIN32_WINNT_WIN7;WIN32;SUPPORT_SOFTWARE_ETC_UNPACK=0;_DEBUG;_WINDOWS;_UNICODE;UNICODE;CPUT_FOR_OGL;CPUT_OS_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\middleware\;..\DirectXTex\DDSTextureLoader;..\DirectXTex\DirectXTex</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;glew32d.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\$(Platform)\$(PlatformToolset)\;$(ProjectDir)lib\</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-DX|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>KTX_OPENGL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=_WIN32_WINNT_WIN7;WIN32;SUPPORT_SOFTWARE_ETC_UNPACK=0;_DEBUG;_WINDOWS;_UNICODE;UNICODE;CPUT_FOR_DX11;CPUT_OS_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\middleware\;..\DirectXTex\DDSTextureLoader;..\DirectXTex\DirectXTex</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>DirectXTex_D.lib;</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\$(Platform)\$(PlatformToolset)\;$(ProjectDir)lib\</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-DX|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>KTX_OPENGL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=_WIN32_WINNT_WIN7;WIN32;SUPPORT_SOFTWARE_ETC_UNPACK=0;NDEBUG;_WINDOWS;_UNICODE;UNICODE;CPUT_FOR_DX11;CPUT_OS_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\middleware\;..\DirectXTex\DDSTextureLoader;..\DirectXTex\DirectXTex</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>DirectXTex_R.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\$(Platform)\$(PlatformToolset)\;$(ProjectDir)lib\</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-GLES|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>KTX_OPENGL_ES3;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=_WIN32_WINNT_WIN7;WIN32;SUPPORT_SOFTWARE_ETC_UNPACK=0;_DEBUG;_WINDOWS;_UNICODE;UNICODE;CPUT_FOR_OGLES;CPUT_FOR_OGLES3;CPUT_OS_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\middleware\;..\DirectXTex\DDSTextureLoader;..\DirectXTex\DirectXTex</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;glew32d.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\$(Platform)\$(PlatformToolset)\;$(ProjectDir)lib\</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-GL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>KTX_OPENGL;WIN32;NDEBUG;_LIB;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=_WIN32_WINNT_WIN7;_WINDOWS;_UNICODE;UNICODE;CPUT_FOR_OGL;CPUT_OS_WINDOWS;SUPPORT_SOFTWARE_ETC_UNPACK=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\middleware\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;glew32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\$(Platform)\$(PlatformToolset)\;$(ProjectDir)lib\</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-GLES|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>KTX_OPENGL_ES3;WIN32;NDEBUG;_LIB;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=_WIN32_WINNT_WIN7;_WINDOWS;_UNICODE;UNICODE;CPUT_FOR_OGLES;CPUT_FOR_OGLES3;CPUT_OS_WINDOWS;SUPPORT_SOFTWARE_ETC_UNPACK=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\middleware\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;glew32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\$(Platform)\$(PlatformToolset)\;$(ProjectDir)lib\</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

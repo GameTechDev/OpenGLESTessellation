@@ -1,0 +1,7 @@
+Texture0 = sky_cube.dds
+
+RenderStateFile     = skybox.rs
+
+VertexShaderFileOGL_1 = skybox.glsl
+GeometryShaderFileOGL_1 = skybox.glsl
+FragmentShaderFileOGL_1 = skybox.glsl

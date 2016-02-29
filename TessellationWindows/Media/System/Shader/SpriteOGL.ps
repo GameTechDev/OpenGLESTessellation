@@ -1,0 +1,17 @@
+precision highp float;
+uniform sampler2D texture0;
+
+in  mediump vec2 Tex;
+
+layout (location = 0) out lowp vec4 fragColor; 
+
+
+void main(void) {
+	mediump float diffuseTexture = texture(texture0, Tex).r;
+	fragColor.r = pow(diffuseTexture,0.2);
+	fragColor.g=0.0;
+	fragColor.b=0.0;
+	fragColor.a=1.0;
+}
+
+

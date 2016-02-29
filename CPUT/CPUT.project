@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="CPUT">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
+    </Plugin>
+  </Plugins>
+  <VirtualDirectory Name="include">
+    <File Name="CPUT/CPUT.h"/>
+    <File Name="CPUT/CPUTAssetLibrary.h"/>
+    <File Name="CPUT/CPUTAssetSet.h"/>
+    <File Name="CPUT/CPUTBuffer.h"/>
+    <File Name="CPUT/CPUTButton.h"/>
+    <File Name="CPUT/CPUTCallbackHandler.h"/>
+    <File Name="CPUT/CPUTCamera.h"/>
+    <File Name="CPUT/CPUTCheckbox.h"/>
+    <File Name="CPUT/CPUTConfigBlock.h"/>
+    <File Name="CPUT/CPUTControl.h"/>
+    <File Name="CPUT/CPUTCrossPlatform.h"/>
+    <File Name="CPUT/CPUTDropdown.h"/>
+    <File Name="CPUT/CPUTEventHandler.h"/>
+    <File Name="CPUT/CPUTFont.h"/>
+    <File Name="CPUT/CPUTFrustum.h"/>
+    <File Name="CPUT/CPUTGuiController.h"/>
+    <File Name="CPUT/CPUTITTTaskMarker.h"/>
+    <File Name="CPUT/CPUTInputLayoutCache.h"/>
+    <File Name="CPUT/CPUTLight.h"/>
+    <File Name="CPUT/CPUTMaterial.h"/>
+    <File Name="CPUT/CPUTMaterialOGL.h"/>
+    <File Name="CPUT/CPUTMath.h"/>
+    <File Name="CPUT/CPUTMesh.h"/>
+    <File Name="CPUT/CPUTModel.h"/>
+    <File Name="CPUT/CPUTNullNode.h"/>
+    <File Name="CPUT/CPUTOSServices.h"/>
+    <File Name="CPUT/CPUTPerfTaskMarker.h"/>
+    <File Name="CPUT/CPUTRefCount.h"/>
+    <File Name="CPUT/CPUTRenderNode.h"/>
+    <File Name="CPUT/CPUTRenderParams.h"/>
+    <File Name="CPUT/CPUTRenderParamsDX.h"/>
+    <File Name="CPUT/CPUTResource.h"/>
+    <File Name="CPUT/CPUTSlider.h"/>
+    <File Name="CPUT/CPUTSprite.h"/>
+    <File Name="CPUT/CPUTText.h"/>
+    <File Name="CPUT/CPUTTexture.h"/>
+    <File Name="CPUT/CPUTTimer.h"/>
+    <File Name="CPUT/CPUTTimerLinux.h"/>
+    <File Name="CPUT/CPUTWindowX.h"/>
+    <File Name="CPUT/CPUT_OGL.h"/>
+    <File Name="CPUT/CPUTRenderStateBlock.h"/>
+    <File Name="CPUT/CPUTAssetSetOGL.h"/>
+    <File Name="CPUT/CPUTAssetLibraryOGL.h"/>
+    <File Name="CPUT/CPUTModelOGL.h"/>
+    <File Name="CPUT/CPUTMeshOGL.h"/>
+    <File Name="CPUT/CPUTBufferOGL.h"/>
+    <File Name="CPUT/CPUTPixelShaderOGL.h"/>
+    <File Name="CPUT/CPUTVertexShaderOGL.h"/>
+    <File Name="CPUT/CPUTShaderOGL.h"/>
+    <File Name="CPUT/CPUTTextureOGL.h"/>
+    <File Name="CPUT/CPUTRenderStateBlockOGL.h"/>
+    <File Name="CPUT/CPUTRenderStateMapsOGL.h"/>
+    <File Name="CPUT/CPUTFontOGL.h"/>
+    <File Name="CPUT/CPUTScene.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="source">
+    <File Name="CPUT/CPUTAssetLibrary.cpp"/>
+    <File Name="CPUT/CPUTAssetSet.cpp"/>
+    <File Name="CPUT/CPUTButton.cpp"/>
+    <File Name="CPUT/CPUTCamera.cpp"/>
+    <File Name="CPUT/CPUTCheckbox.cpp"/>
+    <File Name="CPUT/CPUTConfigBlock.cpp"/>
+    <File Name="CPUT/CPUTControl.cpp"/>
+    <File Name="CPUT/CPUTDropdown.cpp"/>
+    <File Name="CPUT/CPUTFont.cpp"/>
+    <File Name="CPUT/CPUTFrustum.cpp"/>
+    <File Name="CPUT/CPUTGuiController.cpp"/>
+    <File Name="CPUT/CPUTITTTaskMarker.cpp"/>
+    <File Name="CPUT/CPUTLight.cpp"/>
+    <File Name="CPUT/CPUTMaterial.cpp"/>
+    <File Name="CPUT/CPUTMaterialOGL.cpp"/>
+    <File Name="CPUT/CPUTMesh.cpp"/>
+    <File Name="CPUT/CPUTModel.cpp"/>
+    <File Name="CPUT/CPUTNullNode.cpp"/>
+    <File Name="CPUT/CPUTOSServicesLinux.cpp"/>
+    <File Name="CPUT/CPUTPerfTaskMarker.cpp"/>
+    <File Name="CPUT/CPUTRenderNode.cpp"/>
+    <File Name="CPUT/CPUTSlider.cpp"/>
+    <File Name="CPUT/CPUTText.cpp"/>
+    <File Name="CPUT/CPUTTexture.cpp"/>
+    <File Name="CPUT/CPUTTimerLinux.cpp"/>
+    <File Name="CPUT/CPUTWindowX.cpp"/>
+    <File Name="CPUT/CPUT_OGL.cpp"/>
+    <File Name="CPUT/CPUTRenderStateBlock.cpp"/>
+    <File Name="CPUT/CPUTAssetSetOGL.cpp"/>
+    <File Name="CPUT/CPUTAssetLibraryOGL.cpp"/>
+    <File Name="CPUT/CPUTModelOGL.cpp"/>
+    <File Name="CPUT/CPUTMeshOGL.cpp"/>
+    <File Name="CPUT/CPUTBufferOGL.cpp"/>
+    <File Name="CPUT/CPUTPixelShaderOGL.cpp"/>
+    <File Name="CPUT/CPUTVertexShaderOGL.cpp"/>
+    <File Name="CPUT/CPUTTextureOGL.cpp"/>
+    <File Name="CPUT/CPUTRenderStateBlockOGL.cpp"/>
+    <File Name="CPUT/CPUTFontOGL.cpp"/>
+    <File Name="CPUT/CPUTShaderOGL.cpp"/>
+    <File Name="CPUT/CPUTScene.cpp"/>
+  </VirtualDirectory>
+  <Dependencies name="Debug"/>
+  <Dependencies name="Release"/>
+  <Dependencies name="gcc"/>
+  <Dependencies name="msvcc"/>
+  <Settings Type="Static Library">
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Static Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g -std=c++0x -fpermissive" C_Options="-g -std=c++0x -fpermissive" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="./CPUT"/>
+        <IncludePath Value="./gli"/>
+        <IncludePath Value="./glm"/>
+        <Preprocessor Value="DEBUG"/>
+        <Preprocessor Value="_DEBUG"/>
+        <Preprocessor Value="CPUT_OS_LINUX"/>
+        <Preprocessor Value="CPUT_FOR_OGL"/>
+      </Compiler>
+      <Linker Options="-s" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="lib/libCPUT_32D.a" IntermediateDirectory="obj/Debug" Command="./libCPUT_32D.a" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="lib" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Static Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-std=c++0x" C_Options="-std=c++0x" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <Preprocessor Value="CPUT_OS_LINUX"/>
+        <Preprocessor Value="CPUT_FOR_OGL"/>
+      </Compiler>
+      <Linker Options="-s" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="lib/libCPUT_32R.a" IntermediateDirectory="obj/Release" Command="./libCPUT_32R.a" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="lib" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="gcc" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Static Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-std=c++0x" C_Options="-std=c++0x" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags=""/>
+      <Linker Options="-s" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="lib/libCPUT.a" IntermediateDirectory="obj/gcc" Command="./libCPUT.a" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="lib" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="msvcc" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Static Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-std=c++0x" C_Options="-std=c++0x" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags=""/>
+      <Linker Options="-s" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="lib/libCPUT.a" IntermediateDirectory="obj/msvcc" Command="./libCPUT.a" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="lib" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <GlobalSettings>
+      <Compiler Options="" C_Options="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+  </Settings>
+</CodeLite_Project>

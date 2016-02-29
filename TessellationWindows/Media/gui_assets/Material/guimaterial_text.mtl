@@ -1,0 +1,5 @@
+GUITexture = arial_64_0.png
+VertexShaderFileOGL_1 = GUIShaderOGL.vs
+VertexShaderMain = main
+FragmentShaderFileOGL_1 = GUIShaderTextOGL.ps
+RenderStateFile = GUIRenderStateOGL.rs

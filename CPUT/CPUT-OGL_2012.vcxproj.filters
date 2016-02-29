@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="KTX">
+      <UniqueIdentifier>{03afca6f-4936-4fda-9e73-1208e2843409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX">
+      <UniqueIdentifier>{0f251e99-3cee-4a36-80f1-84ad9f3a88c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX\Asset">
+      <UniqueIdentifier>{7a696d30-af9b-4a9c-9fe9-e172e78e0a8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX\GUI">
+      <UniqueIdentifier>{dc9eb776-7e34-4214-8478-2ca80b26b405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX\Materials">
+      <UniqueIdentifier>{25f72a2f-d7ee-4a42-9546-d96d9f39b933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX\RenderSystem">
+      <UniqueIdentifier>{7b4d65eb-c02d-4997-ae79-7066613e2e20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL">
+      <UniqueIdentifier>{3f8b00cb-666e-49a7-ab7f-b4717bcde2bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\GUI">
+      <UniqueIdentifier>{e6b1fc28-d287-4dc3-b88a-5eb0907f6810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\Materials">
+      <UniqueIdentifier>{0e2fa095-5fb2-4e8b-b6df-9f866f286b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\RenderSystem">
+      <UniqueIdentifier>{fcff674c-b889-4b09-868c-5330d6e24d59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\Asset">
+      <UniqueIdentifier>{39e4f8e5-8789-4c36-87e7-66fa08f1ab40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{37769593-4784-40da-8e30-2ce27a7efba4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Asset">
+      <UniqueIdentifier>{ad4e2277-2255-4dfc-aaea-2bd9a1053eeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\GUI">
+      <UniqueIdentifier>{6b1a38fc-ea8d-4be0-900d-098d9838f8b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Material">
+      <UniqueIdentifier>{a3767799-7c16-45ec-b577-387ef6a62454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\RenderSystem">
+      <UniqueIdentifier>{1f430af2-5125-4013-9f78-ef635249f1db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\System">
+      <UniqueIdentifier>{6c5c12a0-1a1b-4297-abfd-d511f0bcca63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Model">
+      <UniqueIdentifier>{f2259d16-1377-4315-a3a1-97a1bfd3fb64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX\Model">
+      <UniqueIdentifier>{fc42970d-cf3e-4615-8e19-19d1920d20be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL\Model">
+      <UniqueIdentifier>{2dffb129-5708-4dec-9995-b33179f27889}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="middleware\libktx\checkheader.c">
+      <Filter>KTX</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware\libktx\hashtable.c">
+      <Filter>KTX</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware\libktx\loader.c">
+      <Filter>KTX</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware\libktx\swap.c">
+      <Filter>KTX</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware\libktx\writer.c">
+      <Filter>KTX</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTAssetLibraryDX11.cpp">
+      <Filter>DirectX\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTAssetSetDX11.cpp">
+      <Filter>DirectX\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTFontDX11.cpp">
+      <Filter>DirectX\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTGuiControllerDX11.cpp">
+      <Filter>DirectX\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTMaterialDX11.cpp">
+      <Filter>DirectX\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTBufferDX11.cpp">
+      <Filter>DirectX\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTRenderStateBlockDX11.cpp">
+      <Filter>DirectX\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTComputeShaderDX11.cpp">
+      <Filter>DirectX\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTDomainShaderDX11.cpp">
+      <Filter>DirectX\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTGeometryShaderDX11.cpp">
+      <Filter>DirectX\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTHullShaderDX11.cpp">
+      <Filter>DirectX\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTPixelShaderDX11.cpp">
+      <Filter>DirectX\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTShaderDX11.cpp">
+      <Filter>DirectX\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTVertexShaderDX11.cpp">
+      <Filter>DirectX\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTTextureDX11.cpp">
+      <Filter>DirectX\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUT_DX11.cpp">
+      <Filter>DirectX\RenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTRenderTarget.cpp">
+      <Filter>DirectX\RenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTSprite.cpp">
+      <Filter>DirectX\RenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DirectXTex\DDSTextureLoader\DDSTextureLoader.cpp">
+      <Filter>DirectX\RenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTAssetLibraryOGL.cpp">
+      <Filter>OpenGL\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTAssetSetOGL.cpp">
+      <Filter>OpenGL\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTGuiControllerOGL.cpp">
+      <Filter>OpenGL\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTMaterialOGL.cpp">
+      <Filter>OpenGL\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTTextureOGL.cpp">
+      <Filter>OpenGL\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTShaderOGL.cpp">
+      <Filter>OpenGL\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTRenderStateBlockOGL.cpp">
+      <Filter>OpenGL\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTBufferOGL.cpp">
+      <Filter>OpenGL\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUT_OGL.cpp">
+      <Filter>OpenGL\RenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTRenderTargetOGL.cpp">
+      <Filter>OpenGL\RenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTSpriteOGL.cpp">
+      <Filter>OpenGL\RenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTAssetLibrary.cpp">
+      <Filter>Common\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTAssetSet.cpp">
+      <Filter>Common\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTNullNode.cpp">
+      <Filter>Common\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTRenderNode.cpp">
+      <Filter>Common\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTScene.cpp">
+      <Filter>Common\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTCamera.cpp">
+      <Filter>Common\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTFrustum.cpp">
+      <Filter>Common\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTLight.cpp">
+      <Filter>Common\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTButton.cpp">
+      <Filter>Common\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTCheckbox.cpp">
+      <Filter>Common\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTControl.cpp">
+      <Filter>Common\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTDropdown.cpp">
+      <Filter>Common\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTFont.cpp">
+      <Filter>Common\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTFontOGL.cpp">
+      <Filter>Common\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTGuiController.cpp">
+      <Filter>Common\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTSlider.cpp">
+      <Filter>Common\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTText.cpp">
+      <Filter>Common\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTRenderStateBlock.cpp">
+      <Filter>Common\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTTexture.cpp">
+      <Filter>Common\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware\stb\stb_image.c">
+      <Filter>Common\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTMaterial.cpp">
+      <Filter>Common\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTAnimation.cpp">
+      <Filter>Common\RenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTConfigBlock.cpp">
+      <Filter>Common\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTITTTaskMarker.cpp">
+      <Filter>Common\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTOSServicesWin.cpp">
+      <Filter>Common\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTPerfTaskMarker.cpp">
+      <Filter>Common\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTTimerWin.cpp">
+      <Filter>Common\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTWindowAndroid.cpp">
+      <Filter>Common\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTWindowWin.cpp">
+      <Filter>Common\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTSkeleton.cpp">
+      <Filter>Common\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTModel.cpp">
+      <Filter>Common\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTMesh.cpp">
+      <Filter>Common\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTModelDX11.cpp">
+      <Filter>DirectX\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTInputLayoutCacheDX11.cpp">
+      <Filter>DirectX\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTMeshDX11.cpp">
+      <Filter>DirectX\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTMeshOGL.cpp">
+      <Filter>OpenGL\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUT\CPUTModelOGL.cpp">
+      <Filter>OpenGL\Model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CPUT\CPUTAssetLibraryDX11.h">
+      <Filter>DirectX\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTAssetSetDX11.h">
+      <Filter>DirectX\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTFontDX11.h">
+      <Filter>DirectX\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTGuiControllerDX11.h">
+      <Filter>DirectX\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTMaterialDX11.h">
+      <Filter>DirectX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTBufferDX11.h">
+      <Filter>DirectX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTRenderStateBlockDX11.h">
+      <Filter>DirectX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTRenderStateMapsDX11.h">
+      <Filter>DirectX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTRenderStateMapsOGL.h">
+      <Filter>DirectX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTComputeShaderDX11.h">
+      <Filter>DirectX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTDomainShaderDX11.h">
+      <Filter>DirectX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTGeometryShaderDX11.h">
+      <Filter>DirectX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTHullShaderDX11.h">
+      <Filter>DirectX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTPixelShaderDX11.h">
+      <Filter>DirectX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTShaderDX11.h">
+      <Filter>DirectX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTVertexShaderDX11.h">
+      <Filter>DirectX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTTextureDX11.h">
+      <Filter>DirectX\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUT_DX11.h">
+      <Filter>DirectX\RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTRenderTarget.h">
+      <Filter>DirectX\RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTSprite.h">
+      <Filter>DirectX\RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DirectXTex\DDSTextureLoader\DDSTextureLoader.h">
+      <Filter>DirectX\RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTAssetSetOGL.h">
+      <Filter>OpenGL\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTAssetLibraryOGL.h">
+      <Filter>OpenGL\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTGuiControllerOGL.h">
+      <Filter>OpenGL\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTMaterialOGL.h">
+      <Filter>OpenGL\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTTextureOGL.h">
+      <Filter>OpenGL\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTShaderOGL.h">
+      <Filter>OpenGL\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTRenderStateBlockOGL.h">
+      <Filter>OpenGL\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTBufferOGL.h">
+      <Filter>OpenGL\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUT_OGL.h">
+      <Filter>OpenGL\RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTRenderTargetOGL.h">
+      <Filter>OpenGL\RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTSpriteOGL.h">
+      <Filter>OpenGL\RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTOGLES3Compat.h">
+      <Filter>OpenGL\RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTAssetLibrary.h">
+      <Filter>Common\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTAssetSet.h">
+      <Filter>Common\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTNullNode.h">
+      <Filter>Common\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTRenderNode.h">
+      <Filter>Common\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTRenderParams.h">
+      <Filter>Common\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTScene.h">
+      <Filter>Common\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTCamera.h">
+      <Filter>Common\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTFrustum.h">
+      <Filter>Common\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTLight.h">
+      <Filter>Common\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTButton.h">
+      <Filter>Common\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTCallbackHandler.h">
+      <Filter>Common\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTCheckbox.h">
+      <Filter>Common\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTControl.h">
+      <Filter>Common\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTDropdown.h">
+      <Filter>Common\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTEventHandler.h">
+      <Filter>Common\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTFont.h">
+      <Filter>Common\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTFontOGL.h">
+      <Filter>Common\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTGuiController.h">
+      <Filter>Common\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTSlider.h">
+      <Filter>Common\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTText.h">
+      <Filter>Common\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTBuffer.h">
+      <Filter>Common\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTRenderStateBlock.h">
+      <Filter>Common\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTTexture.h">
+      <Filter>Common\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="middleware\stb\stb_image.h">
+      <Filter>Common\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTMaterial.h">
+      <Filter>Common\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUT.h">
+      <Filter>Common\RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTAnimation.h">
+      <Filter>Common\RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTMath.h">
+      <Filter>Common\RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTConfigBlock.h">
+      <Filter>Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTITTTaskMarker.h">
+      <Filter>Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTOSServices.h">
+      <Filter>Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTPerfTaskMarker.h">
+      <Filter>Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTRefCount.h">
+      <Filter>Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTTimer.h">
+      <Filter>Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTTimerWin.h">
+      <Filter>Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTWindow.h">
+      <Filter>Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTWindowAndroid.h">
+      <Filter>Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTWindowWin.h">
+      <Filter>Common\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTSkeleton.h">
+      <Filter>Common\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTModel.h">
+      <Filter>Common\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTMesh.h">
+      <Filter>Common\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTInputLayoutCache.h">
+      <Filter>Common\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTModelDX11.h">
+      <Filter>DirectX\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTMeshDX11.h">
+      <Filter>DirectX\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTInputLayoutCacheDX11.h">
+      <Filter>DirectX\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTMeshOGL.h">
+      <Filter>OpenGL\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUT\CPUTModelOGL.h">
+      <Filter>OpenGL\Model</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

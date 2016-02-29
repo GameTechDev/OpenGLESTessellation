@@ -1,0 +1,5 @@
+GUITexture = atlas.dds
+VertexShaderFileOGL_1 = GUIShaderOGL.vs
+VertexShaderMain = main
+FragmentShaderFileOGL_1 = GUIShaderOGL.ps
+RenderStateFile = GUIRenderStateOGL.rs

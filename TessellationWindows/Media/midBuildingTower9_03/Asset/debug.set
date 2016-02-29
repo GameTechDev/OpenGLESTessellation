@@ -1,0 +1,29 @@
+// Created with FBXConvert.exe: Mon Mar 03 11:46:40 2014
+[node 0]
+type = null
+name = midBuildingTower9_03
+parent = -1
+matrixRow0 = 1 0 -0 0
+matrixRow1 = -0 1 -0 0
+matrixRow2 = 0 0 1 0
+matrixRow3 = -6815.8 2614.800541112217 9422.4 1
+scale = 1 1 1
+rotation = -0 0 0
+position = -6815.8 2614.800541112217 9422.4
+[node 1]
+type = model
+name = metal1
+parent = 0
+matrixRow0 = 1 0 -0 0
+matrixRow1 = -0 1 -0 0
+matrixRow2 = 0 0 1 0
+matrixRow3 = 6815.8 -2614.800541112217 -9422.4 1
+scale = 1 1 1
+rotation = -0 0 0
+position = 6815.8 -2614.800541112217 -9422.4
+BoundingBoxCenter = -7450.40087890625 6433.875122070313 9422.4013671875 
+BoundingBoxHalf = 2840.84033203125 3821.384643554688 1139.5546875 
+meshcount = 1
+material0 = metal
+//Duration: ( 1079045600 ns)
+// FBXConvert.exe Finished: Mon Mar 03 11:46:41 2014
